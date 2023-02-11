@@ -6,6 +6,7 @@ import Contact from "../contact/Contact";
 import { Link } from "react-router-dom";
 import Popular from "../popular/Popular";
 import Footer from "../footer/Footer";
+import Parag from "../paragraph/Parag";
 
 const Home = () => {
   return (
@@ -61,6 +62,7 @@ const Home = () => {
       
     </div>
     <Blogs/>
+    <Parag/>
     <Popular/>
     <Contact/>
     <Footer/>

@@ -17,7 +17,7 @@ import Register from './components/login/Register'
 function App() {
  
   return (
-    <div className="bg-white dark:bg-gray-900 h-auto m-auto">
+    <div className="bg-slate-200 dark:bg-gray-900 h-auto m-auto">
       <Header/>
       <Routes>
         <Route path='/' element={<Home/>}></Route>

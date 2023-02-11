@@ -15,7 +15,7 @@ const Blogs = () => {
       whileInView={{width:"50%"}}
       transition={{duration:1,delay:0.5}}
        className="h-1 bg-blue-500 flex justify-center mb-11 mx-auto align-middle relative">
-        <h1 className="text-xl md:text-3xl absolute top-[-15px] mx-auto z-20 text-center dark:text-white bg-white dark:bg-gray-900">LATEST BLOGS</h1>
+        <h1 className="text-xl md:text-3xl absolute top-[-15px] mx-auto z-20 text-center dark:text-white bg-slate-200 dark:bg-gray-900">LATEST BLOGS</h1>
       </motion.div>
       <div className="w-8/12 mx-auto flex flex-row flex-wrap justify-center  overflow-x-auto">
       {

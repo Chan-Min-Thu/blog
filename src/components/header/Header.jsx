@@ -12,8 +12,8 @@ import SearchList from "../blogs/SearchList";
 const linkStyles=({isActive})=>{
   return{
     background:isActive?"#9fa3ab":"none",
-    padding:isActive?"2px 5px":'none'
-    
+    padding:isActive?"2px 5px":'none',
+    color:"white"
   }
 }
 const Header = () => {
@@ -46,7 +46,7 @@ const Header = () => {
   console.log(filteredBlogs)
   return (
     <div className="sticky top-0 z-30">
-     <nav className="bg-white dark:bg-gray-900 shadow-slate-300 dark:shadow-slate-500 border-b-slate-700 sticky top-0 shadow-md  border-gray-200  px-2 sm:px-4 py-2.5 rounded">
+     <nav className="bg-slate-300 dark:bg-gray-900 shadow-slate-300 dark:shadow-slate-500 border-b-slate-700 sticky top-0 shadow-md  border-gray-200  px-2 sm:px-4 py-2.5 rounded">
         <div className="flex flex-wrap items-center justify-between mx-auto ">
           <Link to='/' className="flex items-center">
             <FaBlog className="text-2xl text-red-600 mr-1"/>
@@ -151,7 +151,7 @@ const Header = () => {
             initial={{opacity:0,display:'hidden'}}
             whileInView={{opacity:1,display:"flex"}}
             transition={{duration:1,delay:0.3}}
-             className={`flex flex-col p-4  border md:relative text-lg border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700`}>
+             className={`flex flex-col p-4  border md:relative text-lg border-gray-100 rounded-lg bg-slate-200 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-slate-300 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700`}>
               <li>
               <NavLink
                   to="/"

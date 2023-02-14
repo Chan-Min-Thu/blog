@@ -24,8 +24,14 @@ const Home = () => {
           transition={{duration:1,delay:0.1}}
         />
         <div className="flex justify-between italic text-xs mx-2 text-stone-800 opacity-60 dark:text-white">
-        <span>14/2/2017</span>
-        <span>Jhon Smit,Education</span>
+        <motion.span
+        initial={{opacity:0}}
+        whileInView={{opacity:1}}
+        transition={{duration:1,delay:0.4}}>14/2/2017</motion.span>
+        <motion.span
+         initial={{opacity:0}}
+         whileInView={{opacity:1}}
+         transition={{duration:1,delay:0.4}}>Jhon Smit,Education</motion.span>
         </div>
         
 

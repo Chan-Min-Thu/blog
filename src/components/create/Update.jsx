@@ -29,7 +29,7 @@ function Update() {
   }
   return (
                 
-    <div className="w-1/2 h-screen mx-auto mt-10 gap-5">
+    <div className="md:w-1/2 w-3/4 h-screen mx-auto mt-10 gap-5">
       <h1 className="text-blue-500 text-xl font-semibold mb-5">Update Blogs</h1>
       {isFetching ? <h1>Loading</h1> :
       <form className="flex flex-col gap-5" onSubmit={handleSubmit}>

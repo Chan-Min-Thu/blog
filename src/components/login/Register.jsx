@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Register = () => {
   return (
     <div className="h-screen p-7">
-      <div className="flex justify-center flex-col rounded mx-auto w-3/5 md:w-1/3 shadow-lg dark:bg-slate-600 gap-3">
+      <div className="flex justify-center flex-col rounded mx-auto w-11/12 md:w-1/3 shadow-lg dark:bg-slate-600 gap-3">
         <h1 className="text-2xl text-blue-500 mx-auto font-semibold my-3">Register</h1>
 
         <form className="p-5">

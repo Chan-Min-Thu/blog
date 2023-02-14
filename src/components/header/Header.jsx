@@ -11,9 +11,8 @@ import SearchList from "../blogs/SearchList";
 
 const linkStyles=({isActive})=>{
   return{
-    background:isActive?"#9fa3ab":"none",
-    padding:isActive?"2px 5px":'none',
-    color:"white"
+    background:isActive?"#9f9f9f":"none",
+
   }
 }
 const Header = () => {
@@ -152,46 +151,43 @@ const Header = () => {
             whileInView={{opacity:1,display:"flex"}}
             transition={{duration:1,delay:0.3}}
              className={`flex flex-col p-4  border md:relative text-lg border-gray-100 rounded-lg bg-slate-200 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-slate-300 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700`}>
-              <li>
               <NavLink
                   to="/"
-                  style={linkStyles}
-                  onClick={()=>setOpen(!open)}
-                  className="block py-2 pl-3 pr-4  rounded  hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-                >
+                  style={linkStyles} className="px-2 py-1 rounded">
+              <li onClick={()=>setOpen(!open)}
+                  className="block py-2 pl-3 pr-4 rounded  hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+              >
                   Home
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to="/allBlogs"
-                  style={linkStyles}
-                  onClick={()=>setOpen(!open)}
-                  className="block py-2 pl-3 pr-4  rounded  hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                </li>
+              </NavLink>
+              <NavLink
+                to="/allBlogs"
+                style={linkStyles} className="px-2 py-1 rounded">
+              <li onClick={()=>setOpen(!open)}
+                className="block py-2 pl-3 pr-4  rounded  hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                 >
                   Blogs
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
+                </li>
+              </NavLink>
+              <NavLink
                   to="/create"
-                  style={linkStyles}
+                  style={linkStyles}className="px-2 py-1 rounded">
+                <li
                   onClick={()=>setOpen(!open)}
                   className="block py-2 pl-3 pr-4 rounded  hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                 >
                   Create
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
+                </li>
+              </NavLink>
+              <NavLink
                   to="/Login"
-                  style={linkStyles}
-                  onClick={()=>setOpen(!open)}
+                  style={linkStyles} className="px-2 py-1 rounded">
+                <li onClick={()=>setOpen(!open)}
                   className="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                 >
                   Log In
-                </NavLink>
-              </li>
+                </li>
+              </NavLink>
             </motion.ul>
           </div>
         </div>

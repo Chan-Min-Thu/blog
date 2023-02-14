@@ -17,7 +17,7 @@ const Detail = () => {
   
   return (
     <div className="relative ">
-    <div className="flex fixed z-10 flex-wrap dark:bg-slate-800 flex-col h-auto overflow-y-scroll scrollbar-thin justify-between">
+    <div className="flex fixed z-10 flex-wrap dark:bg-slate-800 flex-col h-full overflow-y-scroll scrollbar-thin justify-between">
        <MdOutlineArrowBack className="absolute text-2xl dark:text-gray-50 top-3 left-6" onClick={()=>navigate(-1)}/>
        <CgMenuLeft className="absolute md:hidden text-2xl dark:text-gray-50 top-3 right-6" onClick={()=>setOpen(!open)}/>
         {isFetching ? (

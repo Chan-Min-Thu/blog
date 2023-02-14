@@ -20,7 +20,7 @@ const Create = () => {
   }
 
   return (
-    <div className="w-1/2 h-screen mx-auto mt-10 gap-5">
+    <div className="w-3/4 md:w-1/2 h-screen mx-auto mt-10 gap-5">
     <motion.h1 
     initial={{x:-200,opacity:0}}
     animate={{x:0,opacity:1}}
